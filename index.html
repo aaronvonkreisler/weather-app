@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- Halfmoon CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.0/css/halfmoon-variables.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+
+<body>
+
+<div class="w-600 mw-full"> 
+    <div class="card "> <!-- p-0 = padding: 0 -->
+      <img id="image" class="img-fluid rounded-top" alt="..."> <!-- rounded-top = rounded corners on the top -->
+      <!-- First content container nested inside card -->
+      <div class="content">
+        <h2 class="content-title" id="name"> </h2>
+        <div>
+            <form id="form" class="d-flex flex-row-reverse">
+                <button id="submit">Search!</button>
+                <input type="text" id="city" placeholder="search for your city">              
+            </form>
+      </div>
+      <hr />
+      <!-- Second content container nested inside card (comments) -->
+      <div class="content">
+        <h2 class="content-title font-size-24" id="name">
+        </h2>
+        <div>
+          <strong>Temperature</strong>
+          <p id="temp" class="text-right font-size-18"></p>
+        </div>
+        <hr />
+        <div>
+          <strong>Feels like</strong>
+          <p id="feels-like" class="text-right font-size-18"></p>
+        </div>
+        <hr />
+        <div>
+          <strong>Outside</strong>
+          <p id="details" class="text-right font-size-18"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Halfmoon JS -->
+    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.0/js/halfmoon.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+
+</html>
+
+
